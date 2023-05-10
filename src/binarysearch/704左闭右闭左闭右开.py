@@ -42,3 +42,23 @@ class Solution:
             else:                    # nums[mid] == target
                 return mid
         return -1
+
+ class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        # 左开右开区间写法
+        # 初始化 l = -1， r = len（nums） l， 【0，1，2，3】，r
+        left  = -1
+        right = len(nums)
+
+        # 循环判断条件 为 l + 1 《 r
+        # 如果 l 〈 r 会陷入无限循环
+        while left+1  < right:
+            mid = left + (right-left)//2         
+            # 左右端点都无脑更新成mid
+            if nums[mid] < target:
+                left = mid 
+            elif nums[mid] > target:
+                right = mid 
+            else:
+                return mid
+        return -1
