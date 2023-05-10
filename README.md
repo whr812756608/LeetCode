@@ -10,11 +10,11 @@ LeetCode刷题记录，记录代码和做题思路。
     - 思路： 左闭右闭， 左闭右开，左开右开模版, l + (r-l)//2 python中//运算符向下取整, 避免越界
     - 
     - 35\. 搜索插入位置：[`LC35.py`](src/binarysearch/LC35.py)
-    - 思路：左闭右闭模版，终止时 r 在 l 左边， r + 1 = l，return l 或者 r+1 都行
+    - 思路：左闭右闭模版，终止时 R 在 L 左边， R + 1 = L，return L 或者 R+1 都行
     - <img src="binarysearch.png" alt="Figure" width="500" height="200">
     -
     - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`LC34.py`](src/binarysearch/LC34.py)
-    - 思路左闭右闭，
+    - 思路：左闭右闭模版，四种情况的转换
 
     - 27\. 移除元素
     
