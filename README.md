@@ -3,9 +3,10 @@
 LeetCode刷题记录，记录代码和做题思路。
 
 ## 算法训练营
-第一天: 704. 二分查找，27. 移除元素
+第一天: 704. 二分查找，35\. 搜索插入位置, 34\. 在排序数组中查找元素的第一个和最后一个位置, 27. 移除元素
 - [二分查找](src/binarysearch)
     - 704\. 基本的二分查找问题,: [`704左闭右闭左闭右开.py`](src/binarysearch/704左闭右闭左闭右开.py)
+    - 35\. 搜索插入位置
     - 69\. 求 x 的开方: [`SquareX_69.java`](src/binarysearch/SquareX_69.java)
     - 744\. 寻找比目标字母大的最小字母: [`FindSmallestLetterGreaterThanTarget_744.java`](src/binarysearch/FindSmallestLetterGreaterThanTarget_744.java)
     - 540\. 有序数组中的单一元素: [`SingleElementinASortedArray_540.java`](src/binarysearch/SingleElementinASortedArray_540.java)
