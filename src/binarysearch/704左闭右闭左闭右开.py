@@ -23,6 +23,7 @@ class Solution:
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         # 左闭右开写法
+        # 右端点需要初始化为len（nums）
         left = 0  # left boundary (index 0)
         right = len(nums) # 右区间改为 len（nums） 防止数组只有一个元素
         
