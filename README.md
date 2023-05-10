@@ -13,7 +13,9 @@ LeetCode刷题记录，记录代码和做题思路。
     - 思路：左闭右闭模版，终止时 r 在 l 左边， r + 1 = l，return l 或者 r+1 都行
     - <img src="binarysearch.png" alt="Figure" width="500" height="200">
     -
-    - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`LC34.py`](src/binarysearch/LC34.java)
+    - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`LC34.py`](src/binarysearch/LC34.py)
+    - 思路左闭右闭，
+
     - 27\. 移除元素
     
                     以下为fork 内容，仅做参考
