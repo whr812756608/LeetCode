@@ -6,7 +6,7 @@ LeetCode刷题记录，记录代码和做题思路。
 第一天: 704. 二分查找，27. 移除元素
 - [二分查找](src/binarysearch)
     - 704\. 基本的二分查找问题,: [`704_inclusive_left_right.py`](src/binarysearch/704_inclusive_left_right.py)
-    - 704\. 基本的二分查找问题: 
+    - 704\. 基本的二分查找问题: [`
     - 69\. 求 x 的开方: [`SquareX_69.java`](src/binarysearch/SquareX_69.java)
     - 744\. 寻找比目标字母大的最小字母: [`FindSmallestLetterGreaterThanTarget_744.java`](src/binarysearch/FindSmallestLetterGreaterThanTarget_744.java)
     - 540\. 有序数组中的单一元素: [`SingleElementinASortedArray_540.java`](src/binarysearch/SingleElementinASortedArray_540.java)
