@@ -6,9 +6,9 @@ LeetCode刷题记录，记录代码和做题思路。
 第一天: 704. 二分查找，35\. 搜索插入位置, 34\. 在排序数组中查找元素的第一个和最后一个位置, 27. 移除元素
 - [二分查找](src/binarysearch)
     - 704\. 基本的二分查找问题: [`704左闭右闭左闭右开.py`](src/binarysearch/704左闭右闭左闭右开.py)
-     - 思路： 左闭右闭， 左闭右开， 左开右开模版
+            - 思路： 左闭右闭， 左闭右开， 左开右开模版
     - 35\. 搜索插入位置
-     - 思路：左闭右闭模版，终止时 r 在 l 左边， r + 1 = l，return l 或者 r+1 都行
+            - 思路：左闭右闭模版，终止时 r 在 l 左边， r + 1 = l，return l 或者 r+1 都行
     - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`FindFirstAndLastPositionOfElementInSortedArray_34.java`](src/binarysearch/FindFirstAndLastPositionOfElementInSortedArray_34.java)
     - 27\. 移除元素
     - 69\. 求 x 的开方: [`SquareX_69.java`](src/binarysearch/SquareX_69.java)
