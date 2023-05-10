@@ -16,6 +16,7 @@ LeetCode刷题记录，记录代码和做题思路。
     - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`LC34.py`](src/binarysearch/LC34.py)
     - 思路：左闭右闭模版，四种情况的转换
     - <img src="bsearch.png" alt="Figure" width="500" height="200">
+    - <img src="LC34.png" alt="Figure" width="800" height="600">
 
     - 27\. 移除元素
     
