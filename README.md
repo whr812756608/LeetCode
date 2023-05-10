@@ -9,7 +9,7 @@ LeetCode刷题记录，记录代码和做题思路。
     - 704\. 基本的二分查找问题: [`704左闭右闭左闭右开.py`](src/binarysearch/704左闭右闭左闭右开.py)
     - 思路： 左闭右闭， 左闭右开，左开右开模版
     - 
-    - 35\. 搜索插入位置
+    - 35\. 搜索插入位置：[`LC35.py`](src/binarysearch/LC35.py)
     - 思路：左闭右闭模版，终止时 r 在 l 左边， r + 1 = l，return l 或者 r+1 都行
     -
     - 34\. 在排序数组中查找元素的第一个和最后一个位置: [`FindFirstAndLastPositionOfElementInSortedArray_34.java`](src/binarysearch/FindFirstAndLastPositionOfElementInSortedArray_34.java)
