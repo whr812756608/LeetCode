@@ -11,7 +11,7 @@ class solution:
         right = mid - 1
       else:
         return mid 
-     return right + 1  # return left 也许， 
+    return right + 1  # return left 也许， 
      # 终止时 right 在 left 左边， right + 1 = left
      # 插入到right 和 left 中间
       
