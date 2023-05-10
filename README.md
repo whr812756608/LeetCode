@@ -18,7 +18,9 @@ LeetCode刷题记录，记录代码和做题思路。
     - <img src="bsearch.png" alt="Figure" width="500" height="200">
     - <img src="LC34.png" alt="Figure" width="800" height="600">
 
-    - 27\. 移除元素:[`LC27.py`](src/twopointers/LC27.py)
+    - 27\. 移除元素:[`LC27.py`](src/twopointer/LC27.py)
+    - 思路 双指针，快慢指针，快指针遍历数组，如果快指针发现不等于val的数，慢指针覆盖快指针指向的数，
+    - 慢指针只有执行了覆盖后才+1，快指针无论如何都+1
     
                     以下为fork 内容，仅做参考
     -------------------------------------------------------------------
