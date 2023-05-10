@@ -18,7 +18,7 @@ LeetCode刷题记录，记录代码和做题思路。
     - <img src="bsearch.png" alt="Figure" width="500" height="200">
     - <img src="LC34.png" alt="Figure" width="800" height="600">
 
-    - 27\. 移除元素
+    - 27\. 移除元素:[`LC27.py`](src/twopointers/LC27.py)
     
                     以下为fork 内容，仅做参考
     -------------------------------------------------------------------
