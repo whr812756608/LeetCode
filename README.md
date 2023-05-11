@@ -29,7 +29,13 @@ LeetCode刷题记录，记录代码和做题思路。
   - 一个指向数组的开头，一个指向结尾，同时向内缩小，若开头的平方值大于末尾，则将该数放置新数组的末尾，并且使得ｋ-=1，left+=1，
   - 同理若开头平方值小于末尾，则ｋ-=1，right+=1
   - 最后当左右端的指针相遇后，即ｉ＞ｊ时退出循环
+  - 
   - 209\.长度最小的子数组 [`LC209.py`](src/twopointer/LC209.py)
+  - 窗口内是什么？满足其和 ≥ s 的长度最小的 连续 子数组。
+  - 如何移动窗口的起始位置？ 如果当前窗口的值大于s了，窗口就要向前移动了（也就是该缩小了）。
+  - 如何移动窗口的结束位置？ 窗口的结束位置就是遍历数组的指针，也就是for循环里的索引。
+  - 从满足条件不断缩小起始位置left直到不满足条件，满足条件时不断更新ans直到找到最小值
+  - 
   - 713\.乘积小于 K 的子数组
   - 3\.无重复字符的最长子串
   - 59\.螺旋矩阵II
@@ -39,10 +45,10 @@ LeetCode刷题记录，记录代码和做题思路。
     
                     以下为fork 内容，仅做参考
     -------------------------------------------------------------------
-    - 69\. 求 x 的开方: [`SquareX_69.java`](src/binarysearch/SquareX_69.java)
-    - 744\. 寻找比目标字母大的最小字母: [`FindSmallestLetterGreaterThanTarget_744.java`](src/binarysearch/FindSmallestLetterGreaterThanTarget_744.java)
-    - 540\. 有序数组中的单一元素: [`SingleElementinASortedArray_540.java`](src/binarysearch/SingleElementinASortedArray_540.java)
-    - 153\. 寻找旋转排序数组中的最小值: [`FindMinimumInRotatedSortedArray_153.java`](src/binarysearch/FindMinimumInRotatedSortedArray_153.java)
+   - 69\. 求 x 的开方: [`SquareX_69.java`](src/binarysearch/SquareX_69.java)
+   - 744\. 寻找比目标字母大的最小字母: [`FindSmallestLetterGreaterThanTarget_744.java`](src/binarysearch/FindSmallestLetterGreaterThanTarget_744.java)
+   - 540\. 有序数组中的单一元素: [`SingleElementinASortedArray_540.java`](src/binarysearch/SingleElementinASortedArray_540.java)
+   - 153\. 寻找旋转排序数组中的最小值: [`FindMinimumInRotatedSortedArray_153.java`](src/binarysearch/FindMinimumInRotatedSortedArray_153.java)
    
     
 - [双指针](src/twopointer)
