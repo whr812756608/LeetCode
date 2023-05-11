@@ -48,7 +48,13 @@ LeetCode刷题记录，记录代码和做题思路。
   - 从上向下填充：填充的行在[top, bottom+1）/ [top,bottom]区间 ,   填充完后  right -=1，向左移，缩小右边界
   - 从右向左填充：填充的列在[right,left-1，-1) / [right,left]区间，此项为反向填充，填充完后 bottom -=1，向上移，缩小下边界                              
   - 从下向上填充：填充的行在[bootom,top-1，-1）/ [bottom,top]区间 , 此项为反向填充，填充完后 left +=1，向右移， 缩小左边界  
-  -  <img src="LC59.png" alt="Figure" width="700" height="500">     
+  -  <img src="LC59.png" alt="Figure" width="700" height="500">  
+  -  
+  -  54\.螺旋矩阵II[`LC54.py`](src/twopointer/LC54.py)
+  -  循环逻辑相同，count = 1 则循环条件 count <= target，count = 0 则 count < target
+  -  但需要先判断是否count <= target 在更新result和count+=1
+
+  
 
 ## 思维导图总结                                                
   - <img src="zongjie.png" alt="Figure" width="2000" height="380">                                                         
