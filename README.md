@@ -51,7 +51,7 @@ LeetCode刷题记录，记录代码和做题思路。
   -  <img src="LC59.png" alt="Figure" width="700" height="500">     
 
 ## 思维导图总结                                                
-                                                         
+   <img src="zongjie.png" alt="Figure" width="2000" height="500">                                                       
                                                          
                                                          
 
