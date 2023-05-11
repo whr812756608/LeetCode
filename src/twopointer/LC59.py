@@ -1,5 +1,8 @@
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
+        # 生成 n x n 矩阵
+        # 里面的括号[0 for _ in range(n)]控制列的数量
+        # 外面的大括号[[0 for _ in range(n)] for _ in range(n)] 控制行的数量
         matrix = [[0 for _ in range(n)] for _ in range(n)]
         left = 0
         right = n-1
