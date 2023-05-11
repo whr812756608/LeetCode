@@ -11,7 +11,7 @@ class Solution:
 
         nums = 1
         target = n*n
-
+        # 循环结束条件 填充的数 == target
         while nums <= target:
             for j in range(left,right+1):
                 matrix[top][j] = nums
