@@ -44,8 +44,10 @@ LeetCode刷题记录，记录代码和做题思路。
   - 3\.无重复字符的最长子串
   - 59\.螺旋矩阵II[`LC59.py`](src/twopointer/LC59.py) 
   - 参考K神题解，左右上下右左下上，左到右缩进上，上到下缩进右，右到左缩进下，下到上缩进左
-  - (l,r+1)  , t +=1      (t,b+1)  , r-=1
-  - (r,l-1,-1), b -=1     (b,t-1,-1), l+=1  
+  - 从左向右填充：填充的列在[left,right+1) / [left,right] 区间,    填充完后 top  +=1，向下移，缩小上边界
+  - 从上向下填充：填充的行在[top, bottom+1）/ [top,bottom]区间 ,   填充完后  right -=1，向左移，缩小右边界
+  - 从右向左填充：填充的列在[right,left-1，-1) / [right,left]区间，此项为反向填充，填充完后 bottom -=1，向上移，缩小下边界                              
+  - 从下向上填充：填充的行在[bootom,top-1，-1]/[bottom,top]区间 ,  此项为反向填充，填充完后 left +=1，向上移，缩小边界  
   -  <img src="LC59.png" alt="Figure" width="700" height="500">                                                      
                                                          
                                                          
