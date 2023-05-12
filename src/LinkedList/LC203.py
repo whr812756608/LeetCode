@@ -27,3 +27,32 @@ class Solution:
 
         return dummy_head.next       # 最后返回dummy_head的下一节点，
                                      # 即原链表的头节点
+        
+        
+        
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+# 不使用dummy head
+# 先判断 头节点， 不为空且头节点.val == val
+# 删除头节点 head = head.next
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+
+        while head != None and head.val == val:
+                 head = head.next
+        
+        cur = head
+
+        while cur != None and cur.next != None:    # 判断下一节点不为空，因为要读取下一个节点的val， 否则会报错
+            if cur.next.val == val:                #读取cur.next的val
+                cur.next =cur.next.next            # 删除操作，让原本指向下一个节点的指针
+                                                    # 指向下下个节点，cur.next.next 
+            else:
+                cur = cur.next
+        return head                             # 返回头节点
+
+
