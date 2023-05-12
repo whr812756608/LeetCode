@@ -69,6 +69,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - 删除操作 cur.next = cur.next.next， 不删除 cur = cur.next
 - 
 - 707.设计链表 [`LC707.py`](src/LinkedList/LC707.py)
+- 206.反转链表 [`LC206.py`](src/LinkedList/LC206.py)
     
                     以下为fork 内容，仅做参考
     -------------------------------------------------------------------
