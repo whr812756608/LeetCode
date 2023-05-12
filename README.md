@@ -64,6 +64,11 @@ LeetCode刷题记录，记录代码和做题思路。
 
 ## 第三天  链表理论基础， 203.移除链表元素， 707.设计链表， 206.反转链表
 - 203.移除链表元素 [`LC203.py`](src/LinkedList/LC203.py)
+- 使用dummy_head使后面的删除操作统一，cur 指向dummy_head 并return dummy_head.next （原头节点）
+- 使用while 循环因为要一直判断，每次循环判断cur 是否为空 以及 cur.next是否为空
+- 删除操作 cur.next = cur.next.next， 不删除 cur = cur.next
+- 
+- 707.设计链表
     
                     以下为fork 内容，仅做参考
     -------------------------------------------------------------------
