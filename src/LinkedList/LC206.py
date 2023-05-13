@@ -13,3 +13,16 @@ class Solution:
             pre = cur 
             cur = nxt
         return pre
+
+ # 递归法
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        def reverseList(pre,cur):
+            if not cur:
+                return   
+            nxt = cur.next
+            cur.next = pre
+            return reverseList(cur,nxt)
+        
+        return reverseList(None,head)
+            
+        
