@@ -84,7 +84,10 @@ LeetCode刷题记录，记录代码和做题思路。
 - [思路 LC19 Remove Nth Node From End of List.pdf](src/LinkedList/LC19.%20Remove%20Nth%20Node%20From%20End%20of%20List.pdf)
 - <img src= "src/LinkedList/LC19.png" alt="Figure" width="600" height="500">
 - 876\. 链表的中间结点 [`LC876.py`](src/LinkedList/LC876.py)
+- 奇数时快指针走到null前一位（链表末位），慢指针刚好到中间
+- 偶数时快指针走到null上，慢指针刚好到中间
 - 141\. 环形链表:[`LC141.py`](src/LinkedList/LC141.py)
+- 注意快指针走两步，会走到null上 或者null前一位（链表末位） 循环条件为 fast ！= None and fast.next ！== None
 - 142\. 环形链表II:
 
 
