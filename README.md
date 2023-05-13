@@ -83,7 +83,9 @@ LeetCode刷题记录，记录代码和做题思路。
 - 19.删除链表的倒数第N个节点 [`LC19.py`](src/LinkedList/LC19.py)
 - [思路 LC19 Remove Nth Node From End of List.pdf](src/LinkedList/LC19.%20Remove%20Nth%20Node%20From%20End%20of%20List.pdf)
 - <img src= "src/LinkedList/LC19.png" alt="Figure" width="600" height="500">
-- 876. 链表的中间结点
+- 876\. 链表的中间结点
+- 141\. 环形链表:
+- 142\. 环形链表II:
 
 
     
