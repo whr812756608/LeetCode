@@ -76,6 +76,8 @@ LeetCode刷题记录，记录代码和做题思路。
 - 24.两两交换链表中的节点 [`LC24.py`](src/LinkedList/LC24.py)
 - [思路 LC24 Swap Nodes in Pairs.pdf](src/LinkedList/LC24%20Swap%20Nodes%20in%20Pairs.pdf)
 - <img src= "src/LinkedList/LC24.png" alt="Figure" width="600" height="500">
+- 19.删除链表的倒数第N个节点 [`LC19.py`](src/LinkedList/LC19.py)
+- <img src= "src/LinkedList/LC19.png" alt="Figure" width="600" height="500">
 
 
     
