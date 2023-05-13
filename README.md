@@ -89,6 +89,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - 141\. 环形链表:[`LC141.py`](src/LinkedList/LC141.py)
 - 注意快指针走两步，会走到null上 或者null前一位（链表末位） 循环条件为 fast ！= None and fast.next ！== None
 - 142\. 环形链表II:[`LC142.py`](src/LinkedList/LC142.py)
+- - <img src= "src/LinkedList/LC142.png" alt="Figure" width="400" height="300">
 
 
     
