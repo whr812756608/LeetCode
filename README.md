@@ -90,7 +90,10 @@ LeetCode刷题记录，记录代码和做题思路。
 - 注意快指针走两步，会走到null上 或者null前一位（链表末位） 循环条件为 fast ！= None and fast.next ！== None
 - 142\. 环形链表II:[`LC142.py`](src/LinkedList/LC142.py)
 - <img src= "src/LinkedList/LC142.png" alt="Figure" width="400" height="300">
-- 
+- [思路 LC142 Swap Nodes in Pairs.pdf](src/LinkedList/LC24%20Swap%20Nodes%20in%20Pairs.pdf)
+- 在141的基础上再添加两个指针index1（相遇）和 index2（头）
+- 当快慢指针相遇时记录相遇index1，同时让ndex1（相遇）和 index2（头）同时向前走一步
+- 当index1（相遇）和 index2（头）相遇时即为环的入口
 
 
     
