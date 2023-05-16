@@ -128,7 +128,8 @@ LeetCode刷题记录，记录代码和做题思路。
 - 注意collections defalultdict 和 dict的区别
 - defalultdict可以无中生有一个key，对应value为int
 - dict需要先判断key是否存在在hashtable中
-- 
+-  <img src= "src/HashTable/dict.png" alt="Figure" width="500" height="200">
+-  <img src= "src/HashTable/defaultdict.png" alt="Figure" width="500" height="200">
 
 
 
