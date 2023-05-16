@@ -108,8 +108,13 @@ LeetCode刷题记录，记录代码和做题思路。
 - 再遍历第二个数组，hashmap[ord(j)-ord('a')]-=1，减去当前哈希表里对应字母出现次数
 - 遍历26个字母，for i in range（26），hashmap【i】根据题意对每个字母出现次数做判断
 - 349. 两个数组的交集[`LC349.py`](src/HashTable/LC349.py)
+- 创建hashmap，遍历第一个数组，key为数值，value 为1 （value为啥不重要，不等于0就行）
+- 遍历第二个数组，使用 if hashmap.get(num)，如果返回True 则添加结果并且让 对应数值的value变成0
+- if hashmap.get(num):hashmap[num] = 0，目的是用0代表该数字使用过了，去重
+- if function 如果 = 0， if hashmap.get(num) = 0，会返回false，从而不执行if后面的的，达到去重的目的
+- python一行解：return list(set(nums1) & set(nums2))，注意要返回list 否则报错
   
-
+## 第七天 哈希表  1. 两数之和 202. 快乐数 242.有效的字母异位词  383. 赎金信  349. 两个数组的交集
 
 
     
