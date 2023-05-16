@@ -95,6 +95,16 @@ LeetCode刷题记录，记录代码和做题思路。
 - 当快慢指针相遇时记录相遇index1，同时让index1（相遇）和 index2（头）同时向前走一步
 - 当index1（相遇）和 index2（头）相遇时即为环的入口
 
+## 第六天 哈希表  1. 两数之和 202. 快乐数 242.有效的字母异位词  383. 赎金信  349. 两个数组的交集
+- 1\.两数之和：[`twosum.py`](src/HashTable/twosum.py)
+- 梦开始的地方， key 存数组元素的数值，value存对应的下标index
+- 判断 if target-nums 在hashmap中，如果在则返回 hashtable【target-nums】（下标），i （下标）
+- 242\.有效的字母异位词:[`LC242.py`](src/HashTable/LC242.py)
+- 383\.赎金信:[`LC383.py`](src/HashTable/LC383.py)
+- 
+  
+
+
 
     
                     以下为fork 内容，仅做参考
