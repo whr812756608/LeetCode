@@ -97,7 +97,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - 当快慢指针相遇时记录相遇index1，同时让index1（相遇）和 index2（头）同时向前走一步
 - 当index1（相遇）和 index2（头）相遇时即为环的入口
 
-## 第六天 哈希表  1. 两数之和 202. 快乐数 242.有效的字母异位词  383. 赎金信  349. 两个数组的交集
+## 第六天 哈希表  1. 两数之和 242.有效的字母异位词  383. 赎金信  349. 两个数组的交集
 - 1\.两数之和：[`twosum.py`](src/HashTable/twosum.py)
 - 梦开始的地方， key 存数组元素的数值，value存对应的下标index
 - 判断 if target-nums 在hashmap中，如果在则返回 hashtable【target-nums】（下标），i （下标）
@@ -118,7 +118,15 @@ LeetCode刷题记录，记录代码和做题思路。
 - if function 如果 = 0， if hashmap.get(num) = 0，会返回false，从而不执行if后面的的，达到去重的目的
 - python一行解：return list(set(nums1) & set(nums2))，注意要返回list 否则报错
   
-## 第七天 哈希表  1. 两数之和 202. 快乐数 242.有效的字母异位词  383. 赎金信  349. 两个数组的交集
+## 第七天 202.快乐数 454.四数相加II 15. 三数之和 18. 四数之和
+- 454.四数相加II[`LC454.py`](src/HashTable/LC454.py)
+- 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
+- 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
+- 定义int变量count，用来统计 a+b+c+d = 0 出现的次数。
+- 在遍历大C和大D数组，找到如果 0-(c+d) 在map中出现过的话，就用count把map中key对应的value也就是出现次数统计出来。
+- count += hashtable（0-(c+d)）注意不是+=1，加的是出现次数，map中key对应的value
+
+
 
 
     
