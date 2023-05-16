@@ -86,8 +86,10 @@ LeetCode刷题记录，记录代码和做题思路。
 - 876\. 链表的中间结点 [`LC876.py`](src/LinkedList/LC876.py)
 - 奇数时快指针走到null前一位（链表末位），慢指针刚好到中间
 - 偶数时快指针走到null上，慢指针刚好到中间
+- 
 - 141\. 环形链表:[`LC141.py`](src/LinkedList/LC141.py)
 - 注意快指针走两步，会走到null上 或者null前一位（链表末位） 循环条件为 fast ！= None and fast.next ！== None
+- 
 - 142\. 环形链表II:[`LC142.py`](src/LinkedList/LC142.py)
 - <img src= "src/LinkedList/LC142.png" alt="Figure" width="400" height="300">
 - [思路 LC142 LinkedList Cycle II.pdf](src/LinkedList/LC142%20Linked%20List%20Cycle%20II.pdf)
@@ -99,6 +101,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - 1\.两数之和：[`twosum.py`](src/HashTable/twosum.py)
 - 梦开始的地方， key 存数组元素的数值，value存对应的下标index
 - 判断 if target-nums 在hashmap中，如果在则返回 hashtable【target-nums】（下标），i （下标）
+- 
 - 242\.有效的字母异位词:[`LC242.py`](src/HashTable/LC242.py)
 - 383\.赎金信:[`LC383.py`](src/HashTable/LC383.py)
 - 两道题套路相同，都是只有26个小写字母（很重要！！）， 所以才能用ACSII，
@@ -107,6 +110,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - value:代表对应字母出现次数
 - 再遍历第二个数组，hashmap[ord(j)-ord('a')]-=1，减去当前哈希表里对应字母出现次数
 - 遍历26个字母，for i in range（26），hashmap【i】根据题意对每个字母出现次数做判断
+- 
 - 349. 两个数组的交集[`LC349.py`](src/HashTable/LC349.py)
 - 创建hashmap，遍历第一个数组，key为数值，value 为1 （value为啥不重要，不等于0就行）
 - 遍历第二个数组，使用 if hashmap.get(num)，如果返回True 则添加结果并且让 对应数值的value变成0
