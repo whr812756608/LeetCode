@@ -119,7 +119,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - python一行解：return list(set(nums1) & set(nums2))，注意要返回list 否则报错
   
 ## 第七天 202.快乐数 454.四数相加II 15. 三数之和 18. 四数之和
-- 454.四数相加II[`LC454.py`](src/HashTable/LC454.py)
+- 454\.四数相加II[`LC454.py`](src/HashTable/LC454.py)
 - 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
 - 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
 - 定义int变量count，用来统计 a+b+c+d = 0 出现的次数。
@@ -130,6 +130,16 @@ LeetCode刷题记录，记录代码和做题思路。
 - dict需要先判断key是否存在在hashtable中
 -  <img src= "src/HashTable/dict.png" alt="Figure" width="500" height="200">
 -  <img src= "src/HashTable/defaultdict.png" alt="Figure" width="500" height="200">
+-  
+-  202\.快乐数[`LC202.py`](src/HashTable/LC202.py)
+-  求n的各个位数的平方和，先对n模10，取余数，余数即是个位上的数 +=（n%10）**2
+-  再对 n = n //10 向下取整，原先十位数移到了个位数上，直到 n = 1，2，3..9，n小于10， 1,2,3,4...9//10 = 0
+-  while n 循环条件为 n 不等于0， n 小于10 //10 = 0
+-  哈希表判断快乐数是否出现在表里（是否循环）如果在 if n in record： return False，否则把n加入哈希表
+-  本题使用set，加入哈希表的方法为 set.add（n）
+
+
+
 
 
 
