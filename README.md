@@ -101,7 +101,13 @@ LeetCode刷题记录，记录代码和做题思路。
 - 判断 if target-nums 在hashmap中，如果在则返回 hashtable【target-nums】（下标），i （下标）
 - 242\.有效的字母异位词:[`LC242.py`](src/HashTable/LC242.py)
 - 383\.赎金信:[`LC383.py`](src/HashTable/LC383.py)
-- 
+- 两道题套路相同，都是只有26个小写字母（很重要！！）， 所以才能用ACSII，
+- 先创建一个list长度为26，hashmap = 【0】*26
+- 遍历第一个数组，hashmap[ord(i)-ord('a')]+=1,key：ord(i)-ord('a') 对应0，1，2，3，4...26，代表a,b,c,d,...z
+- value:代表对应字母出现次数
+- 再遍历第二个数组，hashmap[ord(j)-ord('a')]-=1，减去当前哈希表里对应字母出现次数
+- 遍历26个字母，for i in range（26），hashmap【i】根据题意对每个字母出现次数做判断
+- 349. 两个数组的交集[`LC349.py`](src/HashTable/LC349.py)
   
 
 
