@@ -124,7 +124,11 @@ LeetCode刷题记录，记录代码和做题思路。
 - 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
 - 定义int变量count，用来统计 a+b+c+d = 0 出现的次数。
 - 在遍历大C和大D数组，找到如果 0-(c+d) 在map中出现过的话，就用count把map中key对应的value也就是出现次数统计出来。
-- count += hashtable（0-(c+d)）注意不是+=1，加的是出现次数，map中key对应的value
+- count += hashtable【0-(c+d)】注意不是+=1，加的是出现次数，map中key对应的value
+- 注意collections defalultdict 和 dict的区别
+- defalultdict可以无中生有一个key，对应value为int
+- dict需要先判断key是否存在在hashtable中
+- 
 
 
 
