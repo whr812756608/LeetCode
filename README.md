@@ -150,6 +150,7 @@ LeetCode刷题记录，记录代码和做题思路。
 -  s = a + b +c if s > target，right--； if s < target， left++
 -  收集结果时去重 先更新指针left++ right--
 -  再判断left 和 left-1，left++； right 和 right+1，right--
+-  <img src= "src/twopointer/LC15.png" alt="Figure" width="800" height="600">
 -  
 -  18\. 四数之和 [`LC18.py`](src/twopointer/LC18.py)
 -  四数之和在三数基础上再套一层for循环，四个指针，初始化：k（0），i（k+1），left（i+1），right（n-1）
