@@ -156,7 +156,7 @@ LeetCode刷题记录，记录代码和做题思路。
 -  k 和 i 都进行去重
 -  k去重！！if k > 0 and nums【k】==nums【k-1】：continue
 -  i去重！！if i > k+1 and nums【i】==nums【i-1】：continue
--  因为i和i-1比，i-1最小为k，所以要判断 i大与k+1
+-  因为i和i-1比，i-1最小为k，所以要判断 i大于k+1
 
 
 
