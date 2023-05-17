@@ -137,6 +137,9 @@ LeetCode刷题记录，记录代码和做题思路。
 -  while n 循环条件为 n 不等于0， n 小于10 //10 = 0
 -  哈希表判断快乐数是否出现在表里（是否循环）如果在 if n in record： return False，否则把n加入哈希表
 -  本题使用set，加入哈希表的方法为 set.add（n）
+-  
+-  15. 三数之和 [`LC15.py`](src/twopointer/LC202.py)
+-  18. 四数之和
 
 
 
