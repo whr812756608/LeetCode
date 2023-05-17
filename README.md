@@ -139,8 +139,7 @@ LeetCode刷题记录，记录代码和做题思路。
 -  本题使用set，加入哈希表的方法为 set.add（n）
 -  
 -  15\. 三数之和 [`LC15.py`](src/twopointer/LC15.py)
--  18\. 四数之和 [`LC18.py`](src/twopointer/LC18.py)
--  必须先将给定 nums 排序！复杂度为O(NlogN)。nums。sort（）
+-  必须先将给定 nums 排序！复杂度为O(NlogN)。nums.sort（）
 -  三个指针k，left，right，对应值 a，b，c
 -  固定3个指针中最左（最小）数字的指针 k，双指针left，right 为k+1，len（nums）-1
 -  通过双指针交替向中间移动，记录a + b + c == target的组合
@@ -149,7 +148,15 @@ LeetCode刷题记录，记录代码和做题思路。
 -  对比回溯的树枝去重和树冠去重，这里进行的是树冠去重
 -  循环条件 while left < right，如果left = right，left和right共同指向一个数
 -  s = a + b +c if s > target，right--； if s < target， left++
+-  收集结果时去重 先更新指针left++ right--
+-  再判断left 和 left-1，left++； right 和 right+1，right--
 -  
+-  18\. 四数之和 [`LC18.py`](src/twopointer/LC18.py)
+-  四数之和在三数基础上再套一层for循环，四个指针，初始化：k（0），i（k+1），left（i+1），right（n-1）
+-  k 和 i 都进行去重
+-  k去重！！if k > 0 and nums【k】==nums【k-1】：continue
+-  i去重！！if i > k+1 and nums【i】==nums【i-1】：continue
+-  因为i和i-1比，i-1最小为k，所以要判断 i大与k+1
 
 
 
