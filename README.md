@@ -138,8 +138,18 @@ LeetCode刷题记录，记录代码和做题思路。
 -  哈希表判断快乐数是否出现在表里（是否循环）如果在 if n in record： return False，否则把n加入哈希表
 -  本题使用set，加入哈希表的方法为 set.add（n）
 -  
--  15. 三数之和 [`LC15.py`](src/twopointer/LC15.py)
--  18. 四数之和
+-  15\. 三数之和 [`LC15.py`](src/twopointer/LC15.py)
+-  18\. 四数之和 [`LC18.py`](src/twopointer/LC18.py)
+-  必须先将给定 nums 排序！复杂度为O(NlogN)。nums。sort（）
+-  三个指针k，left，right，对应值 a，b，c
+-  固定3个指针中最左（最小）数字的指针 k，双指针left，right 为k+1，len（nums）-1
+-  通过双指针交替向中间移动，记录a + b + c == target的组合
+-  去重！！if k > 0 and nums【k】==nums【k-1】：continue （使用continue跳到下一个k）
+-  永远用k和k-1对比，如果k和k+1比， 会错过 【-1，-1，2】==0 这种组合（第二个-1会被跳过）
+-  对比回溯的树枝去重和树冠去重，这里进行的是树冠去重
+-  循环条件 while left < right，如果left = right，left和right共同指向一个数
+-  s = a + b +c if s > target，right--； if s < target， left++
+-  
 
 
 
