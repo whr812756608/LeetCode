@@ -10,7 +10,11 @@ class Solution:
             return s
         s= list(s)
 
-        print(s[::-1])
+        # for i in range(0,len(s),2*k):
+        #     s[i:i+k] = reverse(s[i:i+k])
+
+        #for i in range(0,len(s), 2*k):
+        #    s[i:i+k] = s[i:i+k][::-1]
 
         for i in range(0,len(s),2*k):
             if i + k <= len(s):              # check between i+k and len(s)
