@@ -185,7 +185,8 @@ LeetCode刷题记录，记录代码和做题思路。
 - 
 - 151.翻转字符串里的单词
 - 
-- 剑指Offer58-II.左旋转字符串 [`reverseLeftWords.py`]src/twopointer/reverseLeftWords.py
+- 
+- 剑指Offer58-II.左旋转字符串 [`reverseLeftWords.py`](src/twopointer/reverseLeftWords.py)
 
 
 
