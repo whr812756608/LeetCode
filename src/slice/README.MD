@@ -1,7 +1,7 @@
 
 ## Slice a list or string in Python
 ## s[:] and s[::]
-   -都是copy原string或list
+   -都是copy原string或list,选取从头部到尾部元素（包含）
 ```python
    s = [1, 2, 3, 4, 5]
    s_copy_1 = s[::]
@@ -43,5 +43,8 @@
    print(result)  # [4, 3, 2, 1]
 ```
 
- ## s[3:] and s[3::-1]
+ ## s[3:][::-1] and s[3:].reverse()
+ s[3:][::-1] First, s[3:] selects a subset of elements starting from index 3 until the end of the list s. 
+ Then, [::-1] reverses the order of the selected subset, creating a new list.
+ 
 
