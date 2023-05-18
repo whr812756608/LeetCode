@@ -184,8 +184,15 @@ LeetCode刷题记录，记录代码和做题思路。
 - return “”.join(res)
 - 
 - 151.翻转字符串里的单词
+- 先使用 strip 去除首尾空格 s=s.strip()
+- 同向双指针i，j从后往前遍历
+- while循环条件为 i>=0,i-- 因为已经去除了首尾空格，不用担心越界
+- 内部第一次while 循环 while i>=0 and s[i] != " ": 
+- 结束循环时i必定在空格上，此时**s[i+1:j+1]**为尾部第一个单词
+- 内部第二次while 循环 while i>=0 and s[i] = " ": 
+- 结束循环时i到达第二个单词的尾字母，令j=i确定第二个单词的尾部，再执行上一个循环
+- 最后return “ ”.join(res). 注意“ ”里面有一个空格
 - 
--
 - 剑指Offer58-II.左旋转字符串 [`reverseLeftWords.py`](src/twopointer/reverseLeftWords.py)
 - 切片法 s[n:] + s[0:n] **左开右闭**，python可以直接 **+**
 - 取余数法： res += s【i%len（s）】 for i in range（n，n+len（s））
