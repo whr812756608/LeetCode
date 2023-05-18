@@ -47,5 +47,11 @@
  -s[3:][::-1] 
  -First, s[3:] selects a subset of elements starting from index 3 until the end of the list s. 
  -Then [::-1] reverses the order of the selected subset, creating a new list.
+ ```python
+ s = [1, 2, 3, 4, 5, 6]
+ # Using s[3:][::-1]
+ result_1 = s[3:][::-1]
+ print(result_1)  # [6, 5, 4]
+```
  
 
