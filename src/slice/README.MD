@@ -1,7 +1,7 @@
 
 ## Slice a list or string in Python
 # python切割的注意事项
-- #s[:] and s[::]
+- s[:] and s[::]
     - 
 - 二分查找的问题分类：
     - 找寻一个值的位置，其算法基本模板为：
