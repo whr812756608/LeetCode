@@ -171,13 +171,17 @@ LeetCode刷题记录，记录代码和做题思路。
 - 
 - 541\. 反转字符串II (双指针）[`LC541.py`](src/twopointer/LC541.py)
 - 先要将s转换为list，s = list（s）否则无法执行双指针赋值操作 s[left] = s[right]
+- 因为在 Python 和 Java 等语言中，字符串都被设计成「不可变」的类型
 - return “”.join(s)
 - 对于字符串s = 'abc'，如果使用s[0:999] ===> 'abc'。
 - 字符串末尾如果超过最大长度，则会返回至字符串最后一个值，这个特性可以避免一些边界条件的处理。
 - 用切片整体替换，而不是一个个替换.
 
 - 剑指Offer 05.替换空格 [`replaceSpace.py`](src/offer/replaceSpace.py)
-- 
+- 在 Python 和 Java 等语言中，字符串都被设计成「不可变」的类型，即无法直接修改字符串的某一位字符，需要新建一个字符串实现。 
+- 遍历列表 s 中的每个字符 c ：当 c 为空格时：向 res 后添加字符串 "%20" ；当 c 不为空格时：向 res 后添加字符 c
+- if c == " " (打一个空格在括号中间）
+- return “”.join(res)
 
 
 
