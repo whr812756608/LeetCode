@@ -192,6 +192,8 @@ LeetCode刷题记录，记录代码和做题思路。
 - 内部第二次while 循环 while i>=0 and s[i] = " ": 
 - 结束循环时i到达第二个单词的尾字母，令j=i确定第二个单词的尾部，再执行上一个循环
 - 最后return “ ”.join(res). 注意“ ”里面有一个空格
+- <img src= "src/twopointer/LC1511.png" alt="Figure" width="400" height="300">
+- <img src= "src/twopointer/LC1512.png" alt="Figure" width="400" height="300">
 - 
 - 剑指Offer58-II.左旋转字符串 [`reverseLeftWords.py`](src/twopointer/reverseLeftWords.py)
 - 切片法 s[n:] + s[0:n] **左开右闭**，python可以直接 **+**
