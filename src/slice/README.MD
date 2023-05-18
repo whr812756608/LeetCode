@@ -15,13 +15,13 @@ print(s_copy_2 is s)  # False (s_copy_2 is a different list object)
 ```
       
 ## s[:-1] and s[::-1]
-   s[:-1] Includes all elements of the list s <span style="color:red">except</span> the last element.
+ s[:-1] Includes all elements of the list s <span style="color:red"> except </span> the last element.
  ```python
          s = [1, 2, 3, 4, 5]
          result = s[:-1]
          print(result)  # [1, 2, 3, 4]
  ```
-    - s[::-1] Reverses the order of elements in the list s
+ s[::-1] Reverses the order of elements in the list s
  ```python
          s = [1, 2, 3, 4, 5]
          result = s[::-1]
