@@ -44,7 +44,8 @@
 ```
 
  ## s[3:][::-1] and s[3:].reverse()
- s[3:][::-1] First, s[3:] selects a subset of elements starting from index 3 until the end of the list s. 
- Then, [::-1] reverses the order of the selected subset, creating a new list.
+ -s[3:][::-1] 
+ -First, s[3:] selects a subset of elements starting from index 3 until the end of the list s. 
+ -Then [::-1] reverses the order of the selected subset, creating a new list.
  
 
