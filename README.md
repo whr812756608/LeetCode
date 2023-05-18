@@ -184,7 +184,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - return “”.join(res)
 - 
 - 151.翻转字符串里的单词
-- 先使用 strip 去除首尾空格 s=s.strip()
+- 先使用 strip 去除首尾空格 s=s.strip(),使新s首尾必定为单词
 - 同向双指针i，j从后往前遍历
 - while循环条件为 i>=0,i-- 因为已经去除了首尾空格，不用担心越界
 - 内部第一次while 循环 while i>=0 and s[i] != " ": 
