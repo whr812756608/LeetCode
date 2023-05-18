@@ -30,4 +30,5 @@ print(s_copy_2 is s)  # False (s_copy_2 is a different list object)
   ```
  
  ## s[3:-1] and s[3::-1] and s[3:][::-1]
+ s[3:-1]: This slice includes elements from index 3 **up to, but not including**, the last element of the list s
 
