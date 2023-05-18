@@ -187,7 +187,11 @@ LeetCode刷题记录，记录代码和做题思路。
 - 
 -
 - 剑指Offer58-II.左旋转字符串 [`reverseLeftWords.py`](src/twopointer/reverseLeftWords.py)
+- 切片法 s[n:] + s[0:n] **左开右闭**，python可以直接 **+**
+- 取余数法： res += s【i%len（s）】 for i in range（n，n+len（s））
+- 双指针法：分别局部反转再全局反转
 - <img src= "src/twopointer/offer58.png" alt="Figure" width="600" height="500">
+- 
 
 
 
