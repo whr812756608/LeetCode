@@ -28,4 +28,6 @@ print(s_copy_2 is s)  # False (s_copy_2 is a different list object)
          result = s[::-1]
          print(result)  # [5, 4, 3, 2, 1]
   ```
+ 
+ ## s[3:-1] and s[3::-1] and s[3:][::-1]
 
