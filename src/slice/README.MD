@@ -44,7 +44,7 @@
 ```
 
  ## s[3:][::-1] and s[3:].reverse()
- -s[3:][::-1] 
+ -s[3:][::-1](先切片index 3 到尾部， 再reverse切下来的元素）
  -First, s[3:] selects a subset of elements starting from index 3 until the end of the list s. 
  -Then [::-1] reverses the order of the selected subset, creating a new list.
  ```python
@@ -52,6 +52,14 @@
  # Using s[3:][::-1]
  result_1 = s[3:][::-1]
  print(result_1)  # [6, 5, 4]
+```
+s[3:].reverse() 直接在原string上把index3到尾部的元素reverse
+ ```python
+ s = [1, 2, 3, 4, 5, 6]
+ # Using s[3:].reverse()
+ s[3:].reverse()
+ result_2 = s
+ print(result_2)  # [1, 2, 3, 6, 5, 4]
 ```
  
 
