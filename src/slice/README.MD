@@ -1,7 +1,7 @@
 
 ## Slice a list or string in Python
 ## s[:] and s[::]
-      -都是copy原string或list
+   -都是copy原string或list
 ```python
 s = [1, 2, 3, 4, 5]
 s_copy_1 = s[::]
