@@ -31,4 +31,16 @@ print(s_copy_2 is s)  # False (s_copy_2 is a different list object)
  
  ## s[3:-1] and s[3::-1] and s[3:][::-1]
  s[3:-1]: This slice includes elements from index 3 **up to, but not including**, the last element of the list s
+ ```python
+s = [1, 2, 3, 4, 5, 6]
+result = s[3:-1]
+print(result)  # [4, 5]
+ ```
+ s[3::-1] **Reverses** the order of elements from index 3 to the beginning of the list.
+```python
+s = [1, 2, 3, 4, 5, 6]
+result = s[3::-1]
+print(result)  # [4, 3, 2, 1]
+```
+
 
