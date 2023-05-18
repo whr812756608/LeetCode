@@ -15,7 +15,7 @@ print(s_copy_2 is s)  # False (s_copy_2 is a different list object)
 ```
       
 ## s[:-1] and s[::-1]
- s[:-1] Includes all elements of the list s <span style="color:red">except</span> the last element.
+ s[:-1] Includes all elements of the list s **except** the last element.
 
  ```python
          s = [1, 2, 3, 4, 5]
