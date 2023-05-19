@@ -200,9 +200,15 @@ LeetCode刷题记录，记录代码和做题思路。
 - 取余数法： res += s【i%len（s）】 for i in range（n，n+len（s））
 - 双指针法：分别局部反转再全局反转
 - <img src= "src/twopointer/offer58.png" alt="Figure" width="600" height="500">
-- 
 
+## 第九天 KMP算法，28， 459
+28\. 找出字符串中第一个匹配项的下标
+459\. Repeated Substring Pattern
 
+ 
+## 第十天 栈与队列
+232\.用栈实现队列
+225\. 用队列实现栈
 
 
 
