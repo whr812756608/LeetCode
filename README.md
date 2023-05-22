@@ -202,13 +202,40 @@ LeetCode刷题记录，记录代码和做题思路。
 - <img src= "src/twopointer/offer58.png" alt="Figure" width="600" height="500">
 
 ## 第九天 KMP算法，28， 459
-28\. 找出字符串中第一个匹配项的下标
-459\. Repeated Substring Pattern
+- 28\. 找出字符串中第一个匹配项的下标
+- 459\. Repeated Substring Pattern
 
  
 ## 第十天 栈与队列
-232\.用栈实现队列
-225\. 用队列实现栈
+- 232\.用栈实现队列
+- 队列first in first out
+- 栈 first in last out
+- 两个栈，一个输出栈一个输入栈
+- FIFO pop操作：输入栈pop元素 压入输出栈，输出栈再pop栈顶元素，
+- 
+- 225\. 用队列实现栈
+- 一个队列实现FILO操作
+- 把队列首的元素一直pop，pop后再加入队列尾
+- 直到遍历len（queue）-2的元素 for i in range（len（queue）-1）右边开区间
+
+## 第十一天 20. 有效的括号 1047. 删除字符串中的所有相邻重复项 150. 逆波兰表达式求值
+- 20. 有效的括号
+- 三种情况，左括号多；左右不匹配；右括号多
+- 右括号多，左右不匹配： if not stack or c ！= stack【-1】
+- 考虑单独输入"]",上面顺序反了会报错，要先判断栈是否为空
+- 左括号多：遍历结束后栈不为空
+- 
+- 1047. 删除字符串中的所有相邻重复项
+- if not stack or c ！= stack【-1】： 入栈
+- 否则出栈
+- 
+- 150. 逆波兰表达式求值
+- 遇到运算符连续pop栈顶元素
+- 第一次pop 运算符右边的元素
+- 第二次pop 运算符左边的
+- 注意python的除法 int（y/x）
+
+
 
 
 
