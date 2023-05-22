@@ -207,13 +207,15 @@ LeetCode刷题记录，记录代码和做题思路。
 
  
 ## 第十天 栈与队列
-- 232\.用栈实现队列
+- 232\.用栈实现队列 [`LC232.py`](src/stack_deque/LC232.py)
 - 队列first in first out
 - 栈 first in last out
 - 两个栈，一个输出栈一个输入栈
+- push 到输入栈
+- pop 从输出栈pop
 - FIFO pop操作：输入栈pop元素 压入输出栈，输出栈再pop栈顶元素，
 - 
-- 225\. 用队列实现栈
+- 225\. 用队列实现栈 [`LC225.py`](src/stack_deque/LC225.py)
 - 一个队列实现FILO操作
 - 把队列首的元素一直pop，pop后再加入队列尾
 - 直到遍历len（queue）-2的元素 for i in range（len（queue）-1）右边开区间
