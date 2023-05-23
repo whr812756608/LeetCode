@@ -247,6 +247,9 @@ LeetCode刷题记录，记录代码和做题思路。
 - 并且 i 对应的元素不大于 j 对应的元素 （nums[i] <= nums[j])
 - 当滑动窗口向右移动时，只要 i 还在窗口中，那么 j 一定也还在窗口中
 - nums[i] <= nums[j], 我们可以将nums[i]永久地移除
+- 
+- 347\. 前 K 个高频元素: [`TopKFrequentElements_347.java`](src/sort/TopKFrequentElements_347.java)
+- 
 
 
 
