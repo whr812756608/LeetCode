@@ -255,6 +255,7 @@ LeetCode刷题记录，记录代码和做题思路。
      *     - 如果是按数值大小进行排序，那么就把数值较大的那个放入堆中
      *     - 如果是按数值出现的频率排序，那么就把数值出现次数更多的那个数值放入堆中 
      *     - 用哈希表统计fequency，map_[nums[i]] = map_.get(nums[i],0)+1,
+     *     - 调用时 for key，value in map_.item()
      *     - 写map_.get(nums[i])不写0会报错，key nums[i] 如果不存在，map_.get return none
      *     - None + 1 报错
      *   
@@ -263,7 +264,7 @@ LeetCode刷题记录，记录代码和做题思路。
      *     - 然后，构建一个小顶堆，java 里用 PriorityQueue，优先队列的比较规则是 频数大的 > 频数小的
      *     - python语法：heapq.heappush(pri_que,(value,key)
      *     - 遍历每个数字（各个数字不同）：
-     *         - 如果当前堆中元素个数 < k: 就把数字放到堆中 heapq.heappush(pri_que,(value,key)
+     *         - 如果当前堆中元素个数 < k: 就把数字放到堆中 heapq.heappush(pri_que,(value,key)）
      *         - 注意push的是tuple（value，key），因为要根据value来排序
      *         - 如果当前堆中元素个数 >=k: （关键！）把堆顶取出来，把当前数字和堆顶数字 
      *             出现的频数作对比，并把出现次数多的那个放到堆顶。heapq.heappop()
