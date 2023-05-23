@@ -238,7 +238,7 @@ LeetCode刷题记录，记录代码和做题思路。
 - 注意python的除法 int（y/x）
 
 ## 第十三天 20. 有效的括号 1047. 删除字符串中的所有相邻重复项 150. 逆波兰表达式求值
-- 239. 滑动窗口最大值[`LC239.py`](src/slidingwindow/LC239.py)
+- 239. 滑动窗口最大值[`LC239.py`](src/sliding_window/LC239.py)
 - 单调队列 O（N）
 - 优先级队列（heap） O（nlogk）
 - 核心思路是在deque里只维护可能成为最大值的元素的数组下标
