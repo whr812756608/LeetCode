@@ -68,11 +68,13 @@ LeetCode刷题记录，记录代码和做题思路。
 - 使用while 循环因为要一直判断，每次循环判断cur 是否为空 以及 cur.next是否为空
 - 删除操作 cur.next = cur.next.next， 不删除 cur = cur.next
 - 
-- 707.设计链表 [`LC707.py`](src/LinkedList/LC707.py)
-- 206.反转链表 [`LC206.py`](src/LinkedList/LC206.py)
-- 94.反转链表II
+- 707\.设计链表 [`LC707.py`](src/LinkedList/LC707.py)
+- 206\.反转链表 [`LC206.py`](src/LinkedList/LC206.py)
 - 双指针法 pre cur，while cur ！= None：读取 nxt， 更新cur.next，更新 pre，cur = cur，nxt
-- 递归法，递归变量 reverse（pre，cur） -》 reverse（cur，nxt）
+- 递归法，递归变量 reverse（pre，cur） -> reverse（cur，nxt）
+- 94\.反转链表II 
+- Do it in place and in one-pass （不使用额外空间，遍历一次）
+- 
 
 
 ## 第四天  24. 两两交换链表中的节点， 19.删除链表的倒数第N个节点， 面试题 02.07链表相交， 142.环形链表II 
