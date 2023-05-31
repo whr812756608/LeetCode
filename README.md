@@ -76,6 +76,12 @@ LeetCode刷题记录，记录代码和做题思路。
 - Do it in place and in one-pass （不使用额外空间，遍历一次）
 - <img src= "src/LinkedList/LC92_1.png" alt="Figure" width="600" height="500">
 - <img src= "src/LinkedList/LC92.png" alt="Figure" width="600" height="500">
+- 循环次数 for _ in range(left-1): 找到left结点**前一个**节点
+- for _ in range(right - left+1)：一共right - left+1 个元素 （+1 因为如果right == left， 还有一个元素（right 和 left 共同指向该元素）
+- 内部使用迭代遍历，和LC206相同，注意pre 设置为none
+- 最后拼接， 先拼接p0.next.next = cur, 再拼接p0.next = pre， 顺序不能换！！否则报错
+- 反转结束后，p0.next还是指向原来的地方，（反转后的末尾），所以先更改 p0.next.next = cur
+- 再拼接p0.next = pre
 
 
 ## 第四天  24. 两两交换链表中的节点， 19.删除链表的倒数第N个节点， 面试题 02.07链表相交， 142.环形链表II 
