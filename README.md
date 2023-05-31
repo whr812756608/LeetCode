@@ -72,9 +72,10 @@ LeetCode刷题记录，记录代码和做题思路。
 - 206\.反转链表 [`LC206.py`](src/LinkedList/LC206.py)
 - 双指针法 pre cur，while cur ！= None：读取 nxt， 更新cur.next，更新 pre，cur = cur，nxt
 - 递归法，递归变量 reverse（pre，cur） -> reverse（cur，nxt）
-- 94\.反转链表II 
+- 94\.反转链表II [`LC92.py`](src/LinkedList/LC92.py)
 - Do it in place and in one-pass （不使用额外空间，遍历一次）
-- 
+- <img src= "src/LinkedList/LC92_1.png" alt="Figure" width="600" height="500">
+- <img src= "src/LinkedList/LC92.png" alt="Figure" width="600" height="500">
 
 
 ## 第四天  24. 两两交换链表中的节点， 19.删除链表的倒数第N个节点， 面试题 02.07链表相交， 142.环形链表II 
