@@ -298,6 +298,12 @@ LeetCode刷题记录，记录代码和做题思路。
 - python 因为是右开，所以还要再+1
 
 ## 第二十五天 回溯算法part02 216.组合总和III 17.电话号码的字母组合
+- 216\.总和III [`LC216.py`](src/backtracking/LC216.py)
+- 与上题相比，backtracking function需要多转入一个cursum
+- cursum 记录当前和，终止条件为 path.size() == k and cur_sum == targer_sum
+- 单层for 循环逻辑， 先更新 path.append(i), cursum += i， 递归时 startidx = i+1
+- 回溯时 path.pop(), cur_sum -= i
+- 
 
 
 
