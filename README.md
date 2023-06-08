@@ -283,7 +283,7 @@ LeetCode刷题记录，记录代码和做题思路。
      * - 时间复杂度：O(NlogK)  K 为不同数字的个数，K <= N
      * - 空间复杂度：O(K) K 为不同数字的个数，K <= N
      
-## 第二十四天 77.组合  
+## 第二十四天 开始回溯 77.组合  
 - 77\.组合 [`LC77.py`](src/backtracking/LC77.py)
 - 树形结构[`LC77.pdf`](src/backtracking/LC77.pdf)
 - 在组合题目中, i+1和startindex+1的区别：startindex 在横向遍历的时候始终是1  
