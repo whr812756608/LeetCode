@@ -282,7 +282,10 @@ LeetCode刷题记录，记录代码和做题思路。
      *     - [1]这里指的是key
      * - 时间复杂度：O(NlogK)  K 为不同数字的个数，K <= N
      * - 空间复杂度：O(K) K 为不同数字的个数，K <= N
-
+     
+## 第二十四天 77.组合  
+- 77\.组合 [`LC77.py`](src/backtracking/LC77.py)
+- 树形结构[`LC77.pdf`](src/backtracking/LC77.pdf)
 
 
     
