@@ -143,44 +143,44 @@ LeetCode刷题记录，记录代码和做题思路。
 - 使用哈希表会开辟较大空间
 - 本题应使用分治算法中的**摩尔投票算法**
 - 454\.四数相加II[`LC454.py`](src/HashTable/LC454.py)
-- 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
-- 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
-- 定义int变量count，用来统计 a+b+c+d = 0 出现的次数。
-- 在遍历大C和大D数组，找到如果 0-(c+d) 在map中出现过的话，就用count把map中key对应的value也就是出现次数统计出来。
-- count += hashtable【0-(c+d)】注意不是+=1，加的是出现次数，map中key对应的value
-- 注意collections defalultdict 和 dict的区别
-- defalultdict可以无中生有一个key，对应value为int
-- dict需要先判断key是否存在在hashtable中
--  <img src= "src/HashTable/dict.png" alt="Figure" width="500" height="200">
--  <img src= "src/HashTable/defaultdict.png" alt="Figure" width="500" height="200">
--  
+    - 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
+    - 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
+    - 定义int变量count，用来统计 a+b+c+d = 0 出现的次数。
+    - 在遍历大C和大D数组，找到如果 0-(c+d) 在map中出现过的话，就用count把map中key对应的value也就是出现次数统计出来。
+    - count += hashtable【0-(c+d)】注意不是+=1，加的是出现次数，map中key对应的value
+    - 注意collections defalultdict 和 dict的区别
+    - defalultdict可以无中生有一个key，对应value为int
+    - dict需要先判断key是否存在在hashtable中
+    -  <img src= "src/HashTable/dict.png" alt="Figure" width="500" height="200">
+    -  <img src= "src/HashTable/defaultdict.png" alt="Figure" width="500" height="200">
+       
 -  202\.快乐数[`LC202.py`](src/HashTable/LC202.py)
--  求n的各个位数的平方和，先对n模10，取余数，余数即是个位上的数 +=（n%10）**2
--  再对 n = n //10 向下取整，原先十位数移到了个位数上，直到 n = 1，2，3..9，n小于10， 1,2,3,4...9//10 = 0
--  while n 循环条件为 n 不等于0， n 小于10 //10 = 0
--  哈希表判断快乐数是否出现在表里（是否循环）如果在 if n in record： return False，否则把n加入哈希表
--  本题使用set，加入哈希表的方法为 set.add（n）
--  
+    -  求n的各个位数的平方和，先对n模10，取余数，余数即是个位上的数 +=（n%10）**2
+    -  再对 n = n //10 向下取整，原先十位数移到了个位数上，直到 n = 1，2，3..9，n小于10， 1,2,3,4...9//10 = 0
+    -  while n 循环条件为 n 不等于0， n 小于10 //10 = 0
+    -  哈希表判断快乐数是否出现在表里（是否循环）如果在 if n in record： return False，否则把n加入哈希表
+    -  本题使用set，加入哈希表的方法为 set.add（n）
+  
 -  15\. 三数之和 [`LC15.py`](src/twopointer/LC15.py)
--  必须先将给定 nums 排序！复杂度为O(NlogN)。nums.sort（）
--  三个指针k，left，right，对应值 a，b，c
--  固定3个指针中最左（最小）数字的指针 k，双指针left，right 为k+1，len（nums）-1
--  通过双指针交替向中间移动，记录a + b + c == target的组合
--  去重！！if k > 0 and nums【k】==nums【k-1】：continue （使用continue跳到下一个k）
--  永远用k和k-1对比，如果k和k+1比， 会错过 【-1，-1，2】==0 这种组合（第二个-1会被跳过）
--  对比回溯的树枝去重和树冠去重，这里进行的是树冠去重
--  循环条件 while left < right，如果left = right，left和right共同指向一个数
--  s = a + b +c if s > target，right--； if s < target， left++
--  收集结果时去重 先更新指针left++ right--
--  再判断left 和 left-1，left++； right 和 right+1，right--
--  <img src= "src/twopointer/LC15.png" alt="Figure" width="800" height="600">
--  
+    -  必须先将给定 nums 排序！复杂度为O(NlogN)。nums.sort（）
+    -  三个指针k，left，right，对应值 a，b，c
+    -  固定3个指针中最左（最小）数字的指针 k，双指针left，right 为k+1，len（nums）-1
+    -  通过双指针交替向中间移动，记录a + b + c == target的组合
+    -  去重！！if k > 0 and nums【k】==nums【k-1】：continue （使用continue跳到下一个k）
+    -  永远用k和k-1对比，如果k和k+1比， 会错过 【-1，-1，2】==0 这种组合（第二个-1会被跳过）
+    -  对比回溯的树枝去重和树冠去重，这里进行的是树冠去重
+    -  循环条件 while left < right，如果left = right，left和right共同指向一个数
+    -  s = a + b +c if s > target，right--； if s < target， left++
+    -  收集结果时去重 先更新指针left++ right--
+    -  再判断left 和 left-1，left++； right 和 right+1，right--
+    -  <img src= "src/twopointer/LC15.png" alt="Figure" width="800" height="600">
+   
 -  18\. 四数之和 [`LC18.py`](src/twopointer/LC18.py)
--  四数之和在三数基础上再套一层for循环，四个指针，初始化：k（0），i（k+1），left（i+1），right（n-1）
--  k 和 i 都进行去重
--  k去重！！if k > 0 and nums【k】==nums【k-1】：continue
--  i去重！！if i > k+1 and nums【i】==nums【i-1】：continue
--  因为i和i-1比，i-1最小为k，所以要判断 i大于k+1
+    -  四数之和在三数基础上再套一层for循环，四个指针，初始化：k（0），i（k+1），left（i+1），right（n-1）
+    -  k 和 i 都进行去重
+    -  k去重！！if k > 0 and nums【k】==nums【k-1】：continue
+    -  i去重！！if i > k+1 and nums【i】==nums【i-1】：continue
+    -  因为i和i-1比，i-1最小为k，所以要判断 i大于k+1
 
 
 ## 第八天 344.反转字符串 541. 反转字符串II 剑指Offer 05.替换空格 151.翻转字符串里的单词 剑指Offer58-II.左旋转字符串
