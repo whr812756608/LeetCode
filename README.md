@@ -142,9 +142,9 @@ LeetCode刷题记录，记录代码和做题思路。
          *     - for n in nums:  hashmap[n] = hashmap.get(n,0)+1
     - 使用哈希表会开辟较大空间
     - [分治算法](https://leetcode.cn/problems/majority-element/solution/acm-xuan-shou-tu-jie-leetcode-169-duo-sh-y1sr/)
-    - 
+    - [`LC169.py`](src/divideconquer/LC169.py)
     - **[摩尔投票算法](https://leetcode.cn/problems/majority-element/solution/mo-er-tou-piao-fa-de-xing-xiang-jie-shi-03y9s/)**
-    - 
+    - [`LC169_O(1)space.py`](src/divideconquer/LC169_O(1)space.py)
 - 454\.四数相加II[`LC454.py`](src/HashTable/LC454.py)
     - 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
     - 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
