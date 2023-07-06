@@ -132,11 +132,14 @@ LeetCode刷题记录，记录代码和做题思路。
 - 统计数组中元素出现的次数
 - 哈希表的三种写法
     - hashmap = dict（)
-        -dict需要先判断key是否存在在hashtable中
-        * for n in nums: if n not in hashtable: hashmap[n] = 1 else: hashmap[n] +=1
-        *     
+     *     - dict需要先判断key是否存在在hashtable中
+     *     - for n in nums: if n not in hashtable: hashmap[n] = 1 else: hashmap[n] +=1 
     - hashmap = collections.defaultdict(int)
+     *     - defaultdict(int) 可以无中生有key， 但要declear value 对应的值 int
+     *     - for n in nums:  hashmap[n] +=1 
     - hashmap = {}
+     *     -  {} 使用函数 hashmap.get(n,0)+1
+     *     - for n in nums:  hashmap[n] = hashmap.get(n,0)+1 
 - 454\.四数相加II[`LC454.py`](src/HashTable/LC454.py)
 - 首先定义 一个unordered_map，key放a和b两数之和，value 放a和b两数之和出现的次数。
 - 遍历大A和大B数组，统计两个数组元素之和，和出现的次数，放到map中。
